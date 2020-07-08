@@ -2,7 +2,7 @@
 Python makes performing file I/O simple. Take a look
 at how to read and write to files here:
 
-https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
+
 """
 
 # Open up the "foo.txt" file (which already exists) for reading
@@ -11,9 +11,18 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 
 # YOUR CODE HERE
 
+text = open("foo.txt", "r")
+print(text.read())
+text.close()
+
+
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+
+writing = open("bar.txt", "w")
+writing.write("In Brightest Day, In Blackest Night \n No Evil Shall Escape my Sight \nLet those who worship Evil's might; Beware my power, Green Lantern's light!")
+writing.close()
