@@ -55,4 +55,4 @@ print(waypoints)
 # YOUR CODE HERE
 
 for items in waypoints:
-    print(items.values())
+    print(items["lat"], items["lon"], items["name"])
